@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorPane" prefHeight="754.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Game">
+    <children>
+        <BorderPane layoutY="-4.0" prefHeight="823.0" prefWidth="900.0">
+              <center>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" maxWidth="-Infinity" prefWidth="600.0" style="-fx-background-color: #fdf9ee;" BorderPane.alignment="CENTER">
+                      <columnConstraints>
+                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="150.0" />
+                      </columnConstraints>
+                      <rowConstraints>
+                          <RowConstraints minHeight="5.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="5.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                          <RowConstraints maxHeight="-Infinity" minHeight="5.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                      </rowConstraints>
+                      <children>
+                          <ImageView id="0_0" fx:id="fire1" fitHeight="60.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                              <image>
+                                  <Image url="@images/fire.png" />
+                              </image>
+                          </ImageView>
+                          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                              <children>
+                                  <Label fx:id="Label_player1" text="Player 1" />
+                                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                      <children>
+                                          <ImageView fx:id="Player1_symbol" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                              <HBox.margin>
+                                                  <Insets right="10.0" />
+                                              </HBox.margin>
+                                              <image>
+                                                  <Image url="@images/Owned_A.png" />
+                                              </image>
+                                          </ImageView>
+                                          <Label fx:id="Label1_score" text="Score: " />
+                                          <Label fx:id="Label_player1_score" text="0" />
+                                      </children>
+                                  </HBox>
+                              </children>
+                              <opaqueInsets>
+                                  <Insets />
+                              </opaqueInsets>
+                              <padding>
+                                  <Insets top="5.0" />
+                              </padding>
+                          </VBox>
+                    <ImageView fx:id="trap2" fitHeight="60.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                       <image>
+                          <Image url="@images/trap.png" />
+                       </image>
+                    </ImageView>
+                    <ImageView fx:id="shuffle1" fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                       <image>
+                          <Image url="@images/shuffle.png" />
+                       </image>
+                    </ImageView>
+                    <ImageView fx:id="trap1" fitHeight="60.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                       <image>
+                          <Image url="@images/trap.png" />
+                       </image>
+                    </ImageView>
+                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="1">
+                       <children>
+                          <Label fx:id="Label_player2" text="Player 2" />
+                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                             <children>
+                                <ImageView fx:id="Player2_symbol" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                   <HBox.margin>
+                                      <Insets right="10.0" />
+                                   </HBox.margin>
+                                 <image>
+                                    <Image url="@images/Owned_B.png" />
+                                 </image>
+                                </ImageView>
+                                <Label fx:id="Label2_score" text="Score: " />
+                                <Label fx:id="Label_player2_score" text="0" />
+                             </children>
+                          </HBox>
+                       </children>
+                       <opaqueInsets>
+                          <Insets />
+                       </opaqueInsets>
+                       <padding>
+                          <Insets top="5.0" />
+                       </padding>
+                    </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label fx:id="Label_player3" text="Player 3" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="Player3_symbol" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@images/Owned_C.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="Label3_score" text="Score: " />
+                              <Label fx:id="Label_player3_score" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="3">
+                     <children>
+                        <Label fx:id="Label_player4" text="Player 4" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="Player4_symbol" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@images/Owned_D.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="Label4_score" text="Score: " />
+                              <Label fx:id="Label_player4_score" text="0" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </VBox>
+                  <ImageView fx:id="trap3" fitHeight="60.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/trap.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="83.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@images/finish_line.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="shuffle2" fitHeight="59.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/shuffle.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="0_0" fx:id="fire2" fitHeight="60.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/fire.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@images/starting_line.jpg" />
+                     </image>
+                  </ImageView>
+                    <ImageView id="Domino_A" fx:id="player1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                       <image>
+                          <Image url="@images/Player_1.png" />
+                       </image>
+                    </ImageView>
+                  <ImageView id="Domino_A" fx:id="player2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/Player_2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="Domino_A" fx:id="player3" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@images/Player_3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="Domino_A" fx:id="player4" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+                     <image>
+                        <Image url="@images/Player_4.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="0_0" fx:id="fire3" fitHeight="60.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/fire.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="trap4" fitHeight="60.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/trap.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="0_0" fx:id="fire4" fitHeight="60.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <image>
+                        <Image url="@images/fire.png" />
+                     </image>
+                  </ImageView>
+                      </children>
+                  </GridPane>
+              </center>
+              <right>
+                  <VBox alignment="CENTER" prefHeight="671.0" prefWidth="150.0" spacing="20.0" BorderPane.alignment="CENTER">
+                      <children>
+                  <VBox fx:id="direction" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="forwardB" mnemonicParsing="false" onMouseClicked="#moveForward" text="forward">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/arrow.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                                        <Button fx:id="leftB" mnemonicParsing="false" onMouseClicked="#turn_left" text="left" />
+                                        <Button fx:id="rightB" mnemonicParsing="false" onMouseClicked="#turn_right" text="right" />
+                           </children>
+                        </HBox>
+                                <Button id="up" fx:id="backB" mnemonicParsing="false" onMouseClicked="#moveBackward" text="backward" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="endMyTurn" mnemonicParsing="false" onMouseClicked="#next" text="End my turn">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/back_SecondPage.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                      </children>
+                  </VBox>
+              </right>
+              <bottom>
+                  <Label text="Made by " BorderPane.alignment="CENTER">
+                      <BorderPane.margin>
+                          <Insets />
+                      </BorderPane.margin>
+                      <padding>
+                          <Insets top="10.0" />
+                      </padding>
+                  </Label>
+              </bottom>
+           <top>
+              <HBox alignment="CENTER" prefWidth="672.0" spacing="20.0" BorderPane.alignment="BOTTOM_LEFT">
+                 <children>
+                    <Button id="back" mnemonicParsing="false" onAction="#back" text="Back to Setting">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font></Button>
+                  <Button id="up" mnemonicParsing="false" onMouseClicked="#restart" text="Restart">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+                     </font></Button>
+                    <Region prefHeight="62.0" prefWidth="79.0" />
+                    <Label alignment="CENTER" prefHeight="62.0" prefWidth="218.0" text="Simon's Race" textAlignment="CENTER">
+                       <font>
+                          <Font name="Andale Mono" size="27.0" />
+                       </font>
+                    </Label>
+                    <Region prefHeight="62.0" prefWidth="162.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#ruleButton" text="Rule" />
+                  <Button mnemonicParsing="false" onMouseClicked="#scoreButton" text="LeaderBoard" />
+                 </children>
+              </HBox>
+           </top>
+         <left>
+            <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="turn" text="Label" textFill="#0a3179" underline="true">
+                     <font>
+                        <Font name="American Typewriter" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="49.0" prefWidth="108.0" text="It's your turn!" textAlignment="CENTER">
+                     <font>
+                        <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                     </font>
+                  </Label>
+                          <ImageView fx:id="dice1" fitHeight="80.0" fitWidth="80.0" onMouseClicked="#roll" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@images/Dice1.png" />
+                              </image>
+                    </ImageView>
+                          <ImageView fx:id="dice2" fitHeight="80.0" fitWidth="80.0" onMouseClicked="#roll" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                  <Image url="@images/Dice2.png" />
+                              </image>
+                    </ImageView>
+<!--                          <Button fx:id="rollButton" mnemonicParsing="false" onMouseClicked="#roll" text="Roll">-->
+<!--                              <graphic>-->
+<!--                                  <ImageView fitHeight="15.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                                      <image>-->
+<!--                                          <Image url="@images/Dice.png" />-->
+<!--                                      </image>-->
+<!--                                  </ImageView>-->
+<!--                              </graphic>-->
+<!--                          </Button>-->
+                  <VBox alignment="CENTER" prefHeight="98.0" prefWidth="150.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Step left: ">
+                                 <font>
+                                    <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="dice1_label" text="0" textFill="#ab2525">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label text="Direction: ">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dice2_label" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="140.0" text="..." textAlignment="CENTER" textFill="#ab2525">
+                           <font>
+                              <Font name="Apple SD Gothic Neo Regular" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="530.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Rule">
+   <children>
+      <VBox alignment="CENTER" prefHeight="530.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Label text="Game Rule">
+               <font>
+                  <Font name="Apple SD Gothic Neo Regular" size="26.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1. Whoever first reaches the finishing line wins and the game ends." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2. The less the score the winner gets, the higher its rank is. (1 step contributes 1 points to score)" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. There are 3  kinds of obstacles on the way, once stepping on it, the panelties will apply." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. When it's your turn, you throw the dice, one decides the steps you can move (1-4)," />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="another decide which direction you can go(forward, backward or freeze)" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5. Only when there's an obstacle or another player in front of you, you can choose to turn right ot left." />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6. You can end your turn whenever you want." />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label text="Obstacles List">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Region prefHeight="61.0" prefWidth="140.0" />
+                        <Label prefHeight="17.0" prefWidth="44.0" text="Suffle" />
+                        <ImageView fx:id="tt" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/shuffle.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="17.0" prefWidth="320.0" text="Suffle all the obstacles and add 3 points to scores." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Region prefHeight="61.0" prefWidth="140.0" />
+                        <Label prefHeight="17.0" prefWidth="44.0" text="Trap" />
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/trap.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Back to the starting line." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <Region prefHeight="61.0" prefWidth="140.0" />
+                        <Label prefHeight="17.0" prefWidth="44.0" text="Fire" />
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/fire.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Add 5 points to scores." />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

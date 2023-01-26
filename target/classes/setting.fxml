@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Setting">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="12.0" prefHeight="230.0" prefWidth="249.0" spacing="20.0">
+         <children>
+            <Label text="Simon's Race">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="38.0" prefWidth="308.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="120.0" text="Number of Players:" />
+                  <Button id="p2" mnemonicParsing="false" onMouseClicked="#on_click_P2" text="2" />
+                  <Button id="p3" mnemonicParsing="false" onMouseClicked="#on_click_P3" text="3" />
+                  <Button id="p4" mnemonicParsing="false" onMouseClicked="#on_click_P4" text="4" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="38.0" prefWidth="308.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="63.0" text="Level" />
+                  <Button id="p2" mnemonicParsing="false" onMouseClicked="#easy" text="Easy" />
+                  <Button id="p2" mnemonicParsing="false" onMouseClicked="#mid" text="Mid" />
+                  <Button id="p3" mnemonicParsing="false" onMouseClicked="#hard" text="Hard" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="nextButton" mnemonicParsing="false" onMouseClicked="#nextButton" text="Set Name" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="testButton" mnemonicParsing="false" onMouseClicked="#ruleButton" text="Rule" />
+                  <Button fx:id="score" mnemonicParsing="false" onMouseClicked="#scoreButton" text="LeaderBoard" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFD23F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Win">
+   <children>
+      <VBox alignment="CENTER" layoutX="63.0" layoutY="2.0" prefHeight="394.0" prefWidth="475.0">
+         <children>
+            <Label text="You Win!">
+               <font>
+                  <Font name="Apple LiGothic Medium" size="62.0" />
+               </font>
+            </Label>
+            <Label fx:id="winnerName" text="PlayerName" textFill="#2980b9">
+               <font>
+                  <Font name="Apple LiGothic Medium" size="62.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="83.0" prefWidth="475.0">
+               <children>
+                  <Label text="Score: ">
+                     <font>
+                        <Font name="Apple LiGothic Medium" size="62.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreNum" text="0" textFill="#f26a10">
+                     <font>
+                        <Font name="Apple LiGothic Medium" size="62.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Region prefHeight="19.0" prefWidth="475.0" />
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="305.0" spacing="50.0">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="168.0" onMouseClicked="#highScore" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/score.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
