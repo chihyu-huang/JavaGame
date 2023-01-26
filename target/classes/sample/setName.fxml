@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SetName">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="12.0" prefHeight="230.0" prefWidth="249.0" spacing="20.0">
+         <children>
+            <Label text="Set Players' Name">
+               <font>
+                  <Font name="Apple Color Emoji" size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="38.0" prefWidth="308.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label fx:id="playerNameLabel1" text="Palyer 1" />
+                  <TextField fx:id="player1_name" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="38.0" prefWidth="308.0" spacing="10.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label fx:id="playerNameLabel2" text="Palyer 2" />
+                  <TextField fx:id="player2_name" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="38.0" prefWidth="308.0" spacing="10.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label fx:id="playerNameLabel3" text="Palyer 3" />
+                  <TextField fx:id="player3_name" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="38.0" prefWidth="308.0" spacing="10.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label fx:id="playerNameLabel4" text="Palyer 4" />
+                  <TextField fx:id="player4_name" />
+               </children>
+            </HBox>
+            <Button fx:id="StartButton" mnemonicParsing="false" onMouseClicked="#startButton" text="Start">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
