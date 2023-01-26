@@ -1,2 +1,2 @@
 # JavaGame
-A school Java program
+A school Java project
