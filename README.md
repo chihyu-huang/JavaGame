@@ -4,8 +4,8 @@ We're asked to do a JavaFX game with MVC pattern.
 
 
 ## Game Description
-This game is board-based(4X6) game which has a start and finish line.
-In the beginning, you can choose the difficulty of the game and the number of players. Then assign names to each player.
+This is a board-based(4X6) game which has a start and finish line.
+In the beginning, you choose the difficulty of the game and the number of players, then assign names to each player.
 When the game starts, player gets the chance to throw dice which decide their move(step and direction) in their turn.
 Whoever reaches to the finish line first wins the game. and if its score is low enough, it'll be recorded in the leaderboard.
 ![Game view](https://github.com/BOBOeternal/JavaGame/blob/main/Game%20View.png)
