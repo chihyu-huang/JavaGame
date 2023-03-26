@@ -8,7 +8,7 @@ This is a board-based(4X6) game which has a start and finish line.
 In the beginning, you choose the difficulty of the game and the number of players, then assign names to each player.
 When the game starts, player gets the chance to throw dice which decide their move(step and direction) in their turn.
 Whoever reaches to the finish line first wins the game. and if its score is low enough, it'll be recorded in the leaderboard.
-![Game view](https://github.com/BOBOeternal/JavaGame/blob/main/Game%20View.png)
+![Game view](https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/Game%20View.png)
 
 ### Rules
 1. You can end your turn anytime you want.
@@ -19,3 +19,9 @@ Whoever reaches to the finish line first wins the game. and if its score is low 
   - Suffle: Shuffle all the obstacles and add 3 points as panelty.
   - Trap: Start from the start line.
   - Fire: Add 5 points as panelty.
+
+
+### Screenshots of the game
+1. Game starts in setting page, in here players get to choose how many players and the difficulty of this game.
+![Setting](https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/0.%20Setting.png)
+2. 
