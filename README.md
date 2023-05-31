@@ -1,5 +1,6 @@
 # JavaGame
 - This is a JavaFX game project with MVC pattern.
+- Read "javafxGame.pdf" to get more details about this project.
 - Demo video: https://youtu.be/_XtBZRbuPJU
 
 ## Game Description
