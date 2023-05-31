@@ -1,7 +1,7 @@
 # JavaGame
 This is a JAVA game project from JAVA programming at UCD
 We're asked to do a JavaFX game with MVC pattern.
-
+Demo video: https://youtu.be/_XtBZRbuPJU
 
 ## Game Description
 This is a board-based(4X6) game which has a start and finish line.
