@@ -1,50 +1,58 @@
+
 # JavaGame
-- This is a JavaFX game project with MVC pattern.
-- Read "javafxGame.pdf" to get more details about this project.
-- Demo video: https://youtu.be/_XtBZRbuPJU
+
+Welcome to the JavaGame project! This JavaFX game project implements the MVC pattern for a board-based (4X6) game with a start and finish line. Read the "javafxGame.pdf" file for detailed information about this project. You can also watch the demo video [here](https://youtu.be/_XtBZRbuPJU).
 
 ## Game Description
-This is a board-based(4X6) game which has a start and finish line.
-In the beginning, you choose the difficulty of the game and the number of players, then assign names to each player.
-When the game starts, player gets the chance to throw dice which decide their move(step and direction) in their turn.
-Whoever reaches to the finish line first wins the game. and if its score is low enough, it'll be recorded in the leaderboard.
 
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/0_Game%20View.png" width = "900">
+This game involves players navigating through a board to reach the finish line. Here's a brief overview:
 
+- **Board Layout:** The game board is a 4X6 grid with a start and finish line.
+- **Setup:** Choose the difficulty level and the number of players at the beginning. Assign names to each player.
+- **Gameplay:** Players take turns to throw dice, determining their move (step and direction).
+- **Objective:** The first player to reach the finish line wins. Low-scoring wins are recorded in the leaderboard.
+
+![Game View](https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/0_Game%20View.png)
 
 ### Rules
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/0_rules.png" width = "750">
-1. You can end your turn anytime you want.
-2. Both dice are 4-side, one determines the steps you can take(1, 2, 3 or 4) and another is for the direction you can move(50% forward, 25% backward and 25%freeze).
-3. Only when an obstacle or another player block the way, player can turn right or left.
-4. Each step contributes to one point to score.
-5. There are three kinds of obstacles, each has different rules. Once a player steps on it, the panelty applies.
-  - Suffle: Shuffle all the obstacles and add 3 points as panelty.
-  - Trap: Start from the start line.
-  - Fire: Add 5 points as panelty.
+Here are some rules of the game:
+1. Players can end their turn at any time.
+2. Two 4-sided dice determine step and direction (50% forward, 25% backward, 25% freeze).
+3. Players can turn right or left only if an obstacle or another player blocks the way.
+4. Each step contributes one point to the score.
+5. There are three types of obstacles, each with different penalties.
 
+For detailed rules, refer to the provided documentation.
 
-### Screenshots of the game
-1. Game starts in setting page, in here players get to choose how many players and the difficulty of this game.
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/1_setting.png" width = "300">
-2. Next, set the name for each players
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/2_set%20name.png" width = "300">
-3. Game start!
-Player's name will be shown on the left of the game panel when it's his/her turn, click on the dice to determine the step and direction of this turn.
-Move domino by using the button on the right.
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_game1.png" width = "900">
-Button will be activated/disabled accordingly in each situation.
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_game3.png" width = "900">
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_game4.png" width = "900">
-4. Once a player reaches the finish line, the game stops and the winner's name and score will be announced
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_win.png" width = "500">
-5. When clicking on the "high score" button, it'll lead to the leaderboard.
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_leaderboard.png" width = "650">
-6. Start a new game!
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/4_game.png" width = "900">
-7. Announce the winner
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/4_win.png" width = "500">
-8. Leaderboard being updated.
-<img src = "https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/4_leaderboard.png" width = "650">
+## Screenshots
 
+Check out some screenshots of the game:
 
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/1_setting.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/2_set%20name.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_game1.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_game3.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/3_leaderboard.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/4_game.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/4_win.png" width="400">
+<img src="https://github.com/BOBOeternal/JavaGame/blob/main/screenshot/4_leaderboard.png" width="400">
+
+## Getting Started
+
+To get started with the game:
+
+1. Clone this repository.
+2. Read the provided documentation (`javafxGame.pdf`) for detailed instructions.
+3. Watch the demo video to understand the gameplay.
+4. Explore the codebase and run the game in your Java environment.
+
+## Dependencies
+
+- JavaFX
+- Java 8 or later
+Great! If you want to include Chih-Yu Huang as a contributor in your project's README, you can format it like this:
+
+## Contributor
+
+- [Chih-Yu Huang](https://github.com/chihyu-huang)
+- [LinkedIn Profile](https://www.linkedin.com/in/chih-yu-huang/)
