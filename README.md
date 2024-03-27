@@ -50,7 +50,6 @@ To get started with the game:
 
 - JavaFX
 - Java 8 or later
-Great! If you want to include Chih-Yu Huang as a contributor in your project's README, you can format it like this:
 
 ## Contributor
 
